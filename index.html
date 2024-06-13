@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar POST para API</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="title">Título:</label><br>
+        <input type="text" id="title" name="title" value="Exemplo"><br>
+
+        <label for="description">Descrição:</label><br>
+        <input type="text" id="description" name="description" value="Descrição do exemplo"><br>
+
+        <label for="duration">Duração:</label><br>
+        <input type="number" id="duration" name="duration" value="60"><br><br>
+
+        <button type="submit">Fazer POST</button>
+    </form>
+
+    <pre id="response"></pre>
+
+    <button id="getData">Fazer GET</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
