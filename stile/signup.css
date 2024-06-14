@@ -53,8 +53,12 @@ input:-webkit-autofill {
 	text-decoration: none;
 }
 button {
+    cursor: pointer;
 	width: 100%;
     margin-top: 1em;
+}
+button:hover{
+    background-color: var(--background);
 }
 label{
     cursor: pointer;
