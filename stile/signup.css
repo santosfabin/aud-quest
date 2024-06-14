@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 1rem;
+	list-style: none;
+	text-decoration: none;
+	outline-style: none;
+	background-color: transparent;
+	border: none;
+    outline: none;
+}
+body {
+	--background: #222;
+	--header: #111;
+	--text: #eee;
+	--switch: start;
+	background: var(--background);
+	color: var(--text);
+}
+
+body.light {
+	--background: #ddd;
+	--header: #eee;
+	--text: #111;
+	--switch: end;
+	background: var(--background);
+	color: var(--text);
+}
+#container {
+	width: 350px;
+	height: 500px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+    background-color: var(--header);
+    border-radius: 40px;
+}
+input,
+button {
+	color: var(--text);
+	border: 1px solid var(--text);
+	padding: 10px;
+	border-radius: 15px;
+	box-shadow: none;
+}
+input:-webkit-autofill {
+	-webkit-text-fill-color: var(--text);
+	-webkit-box-shadow: 0 0 0px 1000px var(--header) inset;
+	text-decoration: none;
+}
+button {
+	width: 100%;
+    margin-top: 1em;
+}
+label{
+    cursor: pointer;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px;
+	width: 100%;
+	height: 40px;
+	background: var(--header);
+}
+header ul {
+	display: flex;
+	gap: 10px;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+header nav span {
+	width: 40px;
+	height: 10px;
+	border-radius: 5px;
+	background: var(--background);
+	display: flex;
+	align-items: center;
+	justify-content: var(--switch);
+}
+
+header nav span::after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: var(--text);
+}
+#criar {
+	width: 100vw;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+form {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    gap: 8px;
+    margin-top: 2em;
+}
+#container span {
+	font-size: 25px;
+}
+#container form * {
+	font-size: 15px;
+}

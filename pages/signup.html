@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enviar POST para API</title>
-</head>
-<body>
-    <form id="myForm">
-        <label for="username">username:</label><br>
-        <input type="text" id="username" name="username" value="Exemplo"><br>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../stile/signup.css" />
+		<title>Enviar POST para API</title>
+	</head>
+	<body>
+		<header>
+			<span>LOGO</span>
+			<nav>
+				<ul>
+					<li>Login</li>
+					<li>About</li>
+				</ul>
+				<span></span>
+			</nav>
+		</header>
+		<nav id="criar">
+			<div id="container">
+				<span>Crie uma conta conosco</span>
+				<form id="myForm">
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" />
 
-        <label for="email">email:</label><br>
-        <input type="text" id="email" name="email" value="Descrição do exemplo"><br>
+					<label for="email">E-mail:</label>
+					<input type="text" id="email" name="email" />
 
-        <label for="password">password:</label><br>
-        <input type="password" id="password" name="password" value="60"><br><br>
+					<label for="password">Senha:</label>
+					<input type="password" id="password" name="password" />
 
-        <label for="nome_da_empresa">nome_da_empresa:</label><br>
-        <input type="text" id="nome_da_empresa" name="nome_da_empresa" value="60"><br><br>
+					<label for="nome_da_empresa">Empresa:</label>
+					<input type="text" id="nome_da_empresa" name="nome_da_empresa" />
 
-        <button type="submit">Criar</button>
-    </form>
+					<button type="submit">Criar</button>
+				</form>
 
-    <pre id="response"></pre>
+				<div id="response"></div>
+			</div>
+		</nav>
 
-    <button id="getData">Puxar os feitos</button>
+		<!--     <button id="getData">Puxar os feitos</button> -->
 
-    <script src="../scripts/signup.js"></script>
-</body>
+		<script src="../scripts/signup.js"></script>
+	</body>
 </html>
