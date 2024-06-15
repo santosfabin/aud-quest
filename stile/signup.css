@@ -1,20 +1,4 @@
-body {
-	--background: #222;
-	--header: #111;
-	--text: #eee;
-	--switch: start;
-	background: var(--background);
-	color: var(--text);
-}
 
-body.light {
-	--background: #ddd;
-	--header: #eee;
-	--text: #111;
-	--switch: end;
-	background: var(--background);
-	color: var(--text);
-}
 #container {
 	width: 350px;
 	height: 500px;
@@ -108,4 +92,7 @@ form {
 }
 #container form * {
 	font-size: 15px;
+}
+form button{
+	margin-bottom: 15px;
 }
