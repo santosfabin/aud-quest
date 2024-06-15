@@ -35,43 +35,6 @@ button:hover{
 label{
     cursor: pointer;
 }
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 30px;
-	width: 100%;
-	height: 40px;
-	background: var(--header);
-}
-header ul {
-	display: flex;
-	gap: 10px;
-}
-
-header nav {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-header nav span {
-	width: 40px;
-	height: 10px;
-	border-radius: 5px;
-	background: var(--background);
-	display: flex;
-	align-items: center;
-	justify-content: var(--switch);
-}
-
-header nav span::after {
-	content: "";
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background: var(--text);
-}
 #criar {
 	width: 100vw;
 	height: 90vh;

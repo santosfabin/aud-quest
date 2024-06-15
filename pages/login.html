@@ -3,18 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../stile/base.css">
-		<link rel="stylesheet" href="../stile/signup.css" />
-		<link rel="stylesheet" href="../stile/login.css" />
+		<link rel="stylesheet" href="../style/base.css" />
+		<link rel="stylesheet" href="../style/signup.css" />
+		<link rel="stylesheet" href="../style/login.css" />
 		<title>Login</title>
 	</head>
 	<body>
 		<header>
-			<span>LOGO</span>
+			<span><a href="./index.html">LOGO</a></span>
 			<nav>
 				<ul>
 					<li><a href="./signup.html">Sign Up</a></li>
-					<li>About</li>
 				</ul>
 				<span></span>
 			</nav>
@@ -28,17 +27,19 @@
 
 					<label for="password">Senha:</label>
 					<input type="password" id="password" name="password" />
-					
+
 					<label><a href="./signup.html">Não possui uma conta?</a></label>
 					<button type="submit">Verificar</button>
 				</form>
 
-				<div id="response"></div>
+				<div id="response">
+					<!--  -->
+				</div>
 
 				<!-- <button id="getData">Fazer GET</button> -->
 			</div>
 		</nav>
-
+		
 		<script src="../scripts/theme.js"></script>
 		<script src="../scripts/login.js"></script>
 	</body>

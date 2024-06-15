@@ -29,6 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 
 			responseDiv.textContent = `Login bem sucedido para o usuário ${data.user.email}`;
+
+			localStorage.setItem("email", data.user.email);
+			window.location.href = "../pages/pageUser.html";
+
+
 			// Aqui você pode redirecionar o usuário para outra página, exibir uma mensagem de sucesso, etc.
 		} catch (error) {
 			responseDiv.textContent = `Erro: ${error.message}`;

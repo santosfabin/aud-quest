@@ -1,28 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enviar POST para API</title>
-</head>
-<body>
-    <form id="myForm">
-        <label for="title">Título:</label><br>
-        <input type="text" id="title" name="title" value="Exemplo"><br>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../style/base.css" />
+		<link rel="stylesheet" href="../style/index.css">
+		<title>Página inicial</title>
+	</head>
+	<body>
+		<header>
+			<span><a href="./index.html">LOGO</a></span>
+			<nav>
+				<ul>
+					<li><a href="./signup.html">Sign Up</a></li>
+					<li><a href="./login.html">Login</a></li>
+				</ul>
+				<span></span>
+			</nav>
+		</header>
 
-        <label for="description">Descrição:</label><br>
-        <input type="text" id="description" name="description" value="Descrição do exemplo"><br>
+		<section id="our-services">
+			<h1>Nossos Serviços</h1>
+			<section id="nossos-servicos">
+				<h2>Questionário de Auditoria</h2>
+				<p>
+					Em nossa empresa, estamos comprometidos em ajudar as empresas a
+					alcançar o seu máximo potencial de eficiência e conformidade.
+					Para isso, oferecemos serviços de auditoria e avaliação de
+					conformidade com a norma ISO 27001, que é fundamental para
+					garantir a segurança e confidencialidade dos dados e processos
+					empresariais.
+				</p>
+				<p>
+					Nossa abordagem é baseada em questionários abrangentes que
+					permitem que nossos especialistas avaliem a conformidade e
+					eficiência do seu negócio. Esses questionários são projetados
+					para cobrir todos os aspectos importantes da norma ISO 27001,
+					incluindo a gestão de riscos, a segurança da informação, a gestão
+					de incidentes e a gestão de vulnerabilidades.
+				</p>
+				<p>
+					Com nossos serviços, você pode estar seguro de que sua empresa
+					está alinhada com as melhores práticas de segurança e
+					conformidade, reduzindo o risco de incidentes e melhorando a
+					confiança dos clientes e parceiros. Além disso, nossa abordagem
+					flexível e personalizada permite que você obtenha um relatório
+					detalhado e aconselhamento específico para melhorar a sua gestão
+					de riscos e a sua conformidade com a norma ISO 27001.
+				</p>
+				<p>
+					Se você está procurando por uma solução confiável e eficaz para
+					avaliar a conformidade e eficiência do seu negócio, contate-nos
+					hoje mesmo. Nossa equipe especializada estará feliz em ajudá-lo a
+					alcançar seus objetivos e a melhorar a sua gestão de riscos e
+					conformidade.
+				</p>
+			</section>
+			<section id="por-que-escolher-nos">
+				<h2>Por que Escolher-nos?</h2>
+				<p>
+					Quando você precisa de uma auditoria e avaliação de conformidade
+					com a norma ISO 27001, é fundamental escolher uma empresa que
+					ofereça serviços de alta qualidade e especialização. Aqui estão
+					algumas razões pelas quais você deve escolher nossa empresa:
+				</p>
+				<p>
+					Experiência e especialização: Nossa equipe é composta por
+					profissionais experientes e especializados em auditoria e
+					avaliação de conformidade com a norma ISO 27001. Nossos
+					especialistas têm anos de experiência em avaliar e melhorar a
+					gestão de riscos e a conformidade de empresas de diferentes
+					setores.
+				</p>
+				<p>
+					Questionários abrangentes: Nossos questionários são projetados
+					para cobrir todos os aspectos importantes da norma ISO 27001,
+					garantindo que sua empresa seja avaliada de forma completa e
+					detalhada.
+				</p>
+				<p>
+					Flexibilidade e personalização: Nossa abordagem é flexível e
+					personalizada, permitindo que você obtenha um relatório detalhado
+					e aconselhamento específico para melhorar a sua gestão de riscos
+					e a sua conformidade com a norma ISO 27001.
+				</p>
+				<p>
+					Confidencialidade e integridade: Nossa empresa é comprometida com
+					a confidencialidade e integridade dos dados e processos
+					empresariais. Nossos especialistas trabalham de forma
+					transparente e respeitosa com as empresas que trabalham conosco.
+				</p>
+				<p>
+					Melhoria contínua: Nossa abordagem é baseada na melhoria
+					contínua, garantindo que sua empresa esteja sempre alinhada com
+					as melhores práticas de segurança e conformidade.
+				</p>
+				<p>
+					Se você está procurando por uma solução confiável e eficaz para
+					avaliar a conformidade e eficiência do seu negócio, escolha nossa
+					empresa. Nossa equipe especializada estará feliz em ajudá-lo a
+					alcançar seus objetivos e a melhorar a sua gestão de riscos e
+					conformidade.
+				</p>
+			</section>
+		</section>
 
-        <label for="duration">Duração:</label><br>
-        <input type="number" id="duration" name="duration" value="60"><br><br>
+		<footer>
+			© 2024 Empresa de Auditoria. Todos os direitos reservados.
+		</footer>
 
-        <button type="submit">Fazer POST</button>
-    </form>
-
-    <pre id="response"></pre>
-
-    <button id="getData">Fazer GET</button>
-
-    <script src="../scripts/script.js"></script>
-</body>
+		<script src="../scripts/header.js"></script>
+		<script src="../scripts/theme.js"></script>
+	</body>
 </html>
