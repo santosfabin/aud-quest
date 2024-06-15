@@ -1,37 +1,27 @@
-document.getElementById('myForm').addEventListener('submit', async (event) => {
+const form = document.getElementById('myForm');
+form.addEventListener('submit', async function(event) {
     event.preventDefault();
 
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    const responseDiv = document.getElementById('response');
+    const response = await fetch('/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email, password })
+    });
 
-    try {
-        const response = await fetch('https://auditoria.onrender.com/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ email, password })
-        });
-
-        const data = await response.json();
-
-        if (response.ok) {
-            // Armazena o token no localStorage (ou cookie, conforme preferir)
-            localStorage.setItem('token', data.token);
-            responseDiv.textContent = 'Login bem-sucedido! Redirecionando...';
-
-            // Chama a função para buscar dados do usuário após o login bem-sucedido
-            await fetchUserData();
-
-            // Redirecionar para a página após login bem-sucedido
-            window.location.replace('/index.html'); // Altere para a página desejada após login
-
-        } else {
-            responseDiv.textContent = `Erro: ${data.error}`;
-        }
-    } catch (error) {
-        responseDiv.textContent = `Erro: ${error.message}`;
+    if (!response.ok) {
+        const errorMessage = await response.json();
+        document.getElementById('response').textContent = errorMessage.error;
+        return;
     }
+
+    const { token } = await response.json();
+    localStorage.setItem('token', token); // Armazena o token JWT em localStorage ou sessionStorage
+
+    // Redireciona para a página de perfil, dashboard, ou outra página protegida
+    window.location.href = '/profile.html'; // Substitua com a URL da página que deseja redirecionar
 });
