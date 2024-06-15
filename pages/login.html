@@ -3,16 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../stile/base.css">
+        <link rel="stylesheet" href="../stile/base.css">
 		<link rel="stylesheet" href="../stile/signup.css" />
-		<title>Sign Up</title>
+		<link rel="stylesheet" href="../stile/login.css" />
+		<title>Login</title>
 	</head>
 	<body>
 		<header>
 			<span>LOGO</span>
 			<nav>
 				<ul>
-					<li><a href="./login.html">Login</a></li>
+					<li><a href="./signup.html">Sign Up</a></li>
 					<li>About</li>
 				</ul>
 				<span></span>
@@ -20,21 +21,15 @@
 		</header>
 		<nav id="criar">
 			<div id="container">
-				<span>Crie uma conta conosco</span>
+				<span>Faça login</span>
 				<form id="myForm">
-					<label for="username">Username:</label>
-					<input type="text" id="username" name="username" />
-
 					<label for="email">E-mail:</label>
 					<input type="text" id="email" name="email" />
 
 					<label for="password">Senha:</label>
 					<input type="password" id="password" name="password" />
 
-					<label for="nome_da_empresa">Empresa:</label>
-					<input type="text" id="nome_da_empresa" name="nome_da_empresa" />
-
-					<button type="submit">Criar</button>
+					<button type="submit">Verificar</button>
 				</form>
 
 				<div id="response"></div>
@@ -43,6 +38,6 @@
 
 		<!--     <button id="getData">Puxar os feitos</button> -->
 
-		<script src="../scripts/signup.js"></script>
+		<script src="../scripts/login.js"></script>
 	</body>
 </html>

@@ -26,7 +26,7 @@ form.addEventListener('submit', async function(event) {
             throw new Error('Erro ao enviar requisição: ' + response.statusText);
         }
 
-        responseField.textContent = 'Requisição POST enviada com sucesso!';
+        responseField.textContent = 'Conta Criada com sucesso';
     } catch (error) {
         console.error('Erro ao enviar requisição:', error);
         responseField.textContent = 'Erro ao enviar requisição.';

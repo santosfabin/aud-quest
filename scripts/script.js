@@ -13,7 +13,7 @@ form.addEventListener('submit', async function(event) {
     };
 
     try {
-        const response = await fetch('https://auditoria.onrender.com/vitorinha', {
+        const response = await fetch('https://auditoria.onrender.com/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ form.addEventListener('submit', async function(event) {
 
 getDataButton.addEventListener('click', async function() {
     try {
-        const response = await fetch('https://auditoria.onrender.com/vitorinha');
+        const response = await fetch('https://auditoria.onrender.com/signup');
         if (!response.ok) {
             throw new Error('Erro ao obter dados: ' + response.statusText);
         }
