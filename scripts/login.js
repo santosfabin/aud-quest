@@ -7,7 +7,7 @@ document.getElementById('myForm').addEventListener('submit', async (event) => {
     const responseDiv = document.getElementById('response');
 
     try {
-        const response = await fetch('http://localhost:3333/login', {
+        const response = await fetch('https://auditoria.onrender.com/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
