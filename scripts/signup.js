@@ -1,6 +1,6 @@
 const form = document.getElementById('myForm');
 const responseField = document.getElementById('response');
-const getDataButton = document.getElementById('getData');
+/* const getDataButton = document.getElementById('getData'); */
 
 form.addEventListener('submit', async function(event) {
     event.preventDefault();
@@ -12,6 +12,11 @@ form.addEventListener('submit', async function(event) {
         password: formData.get('password'),
         nome_da_empresa: formData.get('nome_da_empresa')
     };
+
+    if (!values.username || !values.email || !values.password || !values.nome_da_empresa) {
+        responseField.textContent = 'Por favor, preencha todos os campos.';
+        return;
+    }
 
     try {
         const response = await fetch('https://auditoria.onrender.com/signup', {
@@ -47,8 +52,8 @@ form.addEventListener('submit', async function(event) {
         console.error('Erro ao obter dados:', error);
         responseField.textContent = 'Erro ao obter dados.';
     }
-});
- */
+}); */
+
 
 document.addEventListener('DOMContentLoaded', () => {
     function getLocalStorage(key) {
