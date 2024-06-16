@@ -94,7 +94,7 @@ async function mostrarValores() {
 
 				console.log(values);
 				try {
-					const response = await fetch("https://auditoria.onrender.com/signup", {
+					const response = await fetch("https://auditoria.onrender.com/resposta", {
 						method: "POST",
 						headers: {
 							"Content-Type": "application/json"
