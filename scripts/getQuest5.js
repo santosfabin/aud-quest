@@ -85,7 +85,7 @@ async function mostrarValores() {
 
 		// Mostra os valores selecionados no console
 		
-		console.log("questoesJson.forEach", valoresSelecionados)
+		console.log(valoresSelecionados)
 
 
 		for (const key in valoresSelecionados) {
@@ -93,7 +93,6 @@ async function mostrarValores() {
 				const values = {
 					usuario: localStorage.getItem('usuario'),
 					pergunta_id: key,
-					pergunta_escrita: "questaooooooooooo1",
 					resposta: valoresSelecionados[key],
 				};
 
@@ -106,10 +105,11 @@ async function mostrarValores() {
 						},
 						body: JSON.stringify(values)
 					});
-			
+					
 					if (!response.ok) {
 						throw new Error("Erro ao enviar requisição: " + response.statusText);
 					}
+					
 				} catch (error) {
 					console.error("Erro ao enviar requisição:", error);
 					responseField.textContent = "Erro ao enviar requisição.";
