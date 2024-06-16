@@ -21,6 +21,3 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 	// Define o conteúdo do elemento logs
 });
-
-const tabela = document.getElementById("base");
-tabela.insertAdjacentHTML("beforeend", content);
