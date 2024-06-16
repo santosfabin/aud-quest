@@ -91,6 +91,8 @@ async function mostrarValores() {
 					pergunta_id: key,
 					resposta: valoresSelecionados[key],
 				};
+
+				console.log(values);
 				try {
 					const response = await fetch("https://auditoria.onrender.com/signup", {
 						method: "POST",
