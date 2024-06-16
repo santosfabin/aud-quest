@@ -1,76 +1,71 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+section .container {
+	padding-top: 50px;
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
+	width: 100%;
+	height: 200px;
 
-header {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-header h1 {
-    font-size: 2.5em;
+	background-color: var(--header);
 }
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.hello-user {
+	display: flex;
+	gap: 1em;
 }
-
+.hello-user * {
+	font-size: 2em;
+}
+#user {
+	margin-bottom: 20px;
+}
+h1 {
+	font-size: 2.5em;
+}
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
 }
+.quest {
+	padding: 50px;
+	margin-bottom: 50px;
 
+	width: 80%;
+
+	border-radius: 30px;
+
+	background-color: var(--header);
+}
 .profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
+	margin: 2em 0;
+	padding: 50px;
+
+	border-radius: 30px;
+
+	background-color: var(--header);
+}
+.profile-inter {
+	display: flex;
+	flex-direction: column;
 }
 
-.avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-right: 20px;
+.conteiner-profile {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
-
-.user-info {
-    max-width: 400px;
+.conteiner-profile p {
+	margin-left: 1em;
 }
-
-.user-info h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+.descricao {
+	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
 }
-
-.bio {
-    max-width: 600px;
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #343a40;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.questoes:hover {
+	text-decoration: underline;
 }

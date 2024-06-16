@@ -4,52 +4,107 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Perfil do Usuário</title>
+		<link rel="stylesheet" href="../style/base.css" />
 		<link rel="stylesheet" href="../style/pageUser.css" />
 	</head>
 	<body>
 		<header>
+			<span><a href="./index.html">LOGO</a></span>
+			<nav>
+				<ul>
+					<li><a id="sair" href="./index.html">Desconectar</a></li>
+				</ul>
+				<span></span>
+			</nav>
+		</header>
+		<section>
 			<div class="container">
 				<h1>Perfil do Usuário</h1>
 			</div>
-		</header>
+		</section>
 
 		<main class="container">
 			<section class="profile">
-				<div class="user-info">
-					<h2 id="user">Nome do Usuário</h2>
-                    
-					<strong>E-mail:</strong>
-					<p id="email">email</p>
+				<div class="profile-inter">
+					<div class="hello-user">
+						<p>Olá</p>
+						<h2 id="user">Nome de Usuário</h2>
+					</div>
 
-					<strong>Nome da empresa:</strong>
-					<p id="nome_da_empresa">empresa</p>
+					<div class="conteiner-profile">
+						<strong>E-mail:</strong>
+						<p id="email">email</p>
+					</div>
 
+					<div class="conteiner-profile">
+						<strong>Nome da empresa:</strong>
+						<p id="nome_da_empresa">empresa</p>
+					</div>
 				</div>
 			</section>
 
-			<section class="bio">
-				<h2>Sobre Mim</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-					id arcu tortor. Etiam vehicula velit ut metus fermentum, ac
-					congue nisi mollis.
+			<section class="quest">
+				<a class="questoes" href="./quest5.html">
+					<h2 >Fazer questionario sobre a ISO 27001 (Requisito 5.0)</h2>
+				</a>
+				<p class="descricao">
+					<span>
+						Este questionário foi desenvolvido para avaliar o alinhamento
+						de uma organização com os requisitos da norma ISO 27001,
+						específicos da seção 5.1 até a 5.30. A ISO 27001 estabelece
+						padrões para sistemas de gestão de segurança da informação,
+						garantindo que as organizações implementem práticas robustas
+						para proteger seus dados e informações sensíveis. Cada
+						pergunta aborda áreas como políticas de segurança da
+						informação, responsabilidades da direção, controle de acesso,
+						gestão de incidentes, entre outros aspectos essenciais para a
+						conformidade com esta norma internacional.
+					</span>
+					<span>
+						Este questionário visa coletar informações detalhadas sobre
+						como a organização implementa e mantém esses requisitos,
+						incluindo políticas documentadas, procedimentos operacionais,
+						registros de treinamento e evidências de conformidade. As
+						respostas ajudarão a avaliar o nível de conformidade da
+						organização com a ISO 27001 e identificar áreas para melhorias
+						contínuas na segurança da informação.
+					</span>
 				</p>
-				<p>
-					Nulla vel efficitur dui. Nunc ullamcorper tincidunt ultricies.
-					Nam a sem vel ex dapibus congue nec a ante.
+			</section>
+
+			<section class="quest">
+				
+				<a class="questoes" href="./quest8.html">
+					<h2 >Fazer questionario sobre a ISO 27001 (Requisito 8.0)</h2>
+				</a>
+
+				<p class="descricao">
+					<span>
+						Este questionário foi desenvolvido para avaliar o alinhamento
+						de uma organização com os requisitos da norma ISO 27001,
+						específicos da seção 8.1 até a 8.12. A ISO 27001 estabelece
+						padrões para sistemas de gestão de segurança da informação,
+						garantindo que as organizações implementem práticas robustas
+						para proteger seus dados e informações sensíveis. Cada
+						pergunta aborda áreas como políticas de segurança da
+						informação, responsabilidades da direção, controle de acesso,
+						gestão de incidentes, entre outros aspectos essenciais para a
+						conformidade com esta norma internacional.
+					</span>
 				</p>
+			</section>
+			<section class="quest">
+				<h2 id="questao">Questões já respondidas</h2>
+				<p>fazer sistema das questoes ja respondidas aqui</p>
 			</section>
 		</main>
 
 		<footer>
-			<div class="container">
-				<p>
-					&copy; 2024 Exemplo de Perfil de Usuário. Todos os direitos
-					reservados.
-				</p>
-			</div>
+			&copy; 2024 Empresa de Auditoria. Todos os direitos reservados.
 		</footer>
 
+		<script src="../scripts/theme.js"></script>
+		<script src="../scripts/pageUser.js"></script>
 		<script src="../scripts/index.js"></script>
 	</body>
 </html>
