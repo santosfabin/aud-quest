@@ -105,11 +105,6 @@ async function mostrarValores() {
 					if (!response.ok) {
 						throw new Error("Erro ao enviar requisição: " + response.statusText);
 					}
-			
-					responseField.textContent = "Conta Criada com sucesso";
-			
-					localStorage.setItem("email", values.email);
-					window.location.href = "../pages/pageUser.html";
 				} catch (error) {
 					console.error("Erro ao enviar requisição:", error);
 					responseField.textContent = "Erro ao enviar requisição.";
