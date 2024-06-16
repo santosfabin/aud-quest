@@ -1,14 +1,26 @@
 document.addEventListener("DOMContentLoaded", async function () {
-	const email = localStorage.getItem("email")
+	const usuario = localStorage.getItem("usuario");
 
-	const user = await fetch(`https://auditoria.onrender.com/resposta/${email}`)
-	const data = await user.json()
+	const user = await fetch(`https://auditoria.onrender.com/pegar/${usuario}`);
+	const data = await user.json();
 
-    console.log(data)
+	console.log(" esse valor ai", data);
 
-	/* console.log(data) */
+	data.forEach(item => {
+		const content = `
+            <div>
+            ${item.pergunta_id}
+            <br>
+            Resposta: 
+            ${item.resposta}
+            </div><br>
+        `;
+		const tabela = document.getElementById("logs");
+		tabela.insertAdjacentHTML("beforeend", content);
+	});
 
-	document.getElementById("logs").textContent = data
-
-
+	// Define o conteúdo do elemento logs
 });
+
+const tabela = document.getElementById("base");
+tabela.insertAdjacentHTML("beforeend", content);

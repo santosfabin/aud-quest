@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 			// Construindo a string conforme necessário
 			const content = `
-                <tr>
+                <tr id="tr-de-numero-${count}">
+                    <td>Questão ${count}</td>
                     <td>${requisito}</td>
                     <td>${fonte}</td>
                     <td>${evidencias_possiveis}</td>
@@ -37,17 +38,17 @@ document.addEventListener("DOMContentLoaded", async function () {
                     <td>${documento_ou_registro}</td>
                     <td>${tipo_de_teste}</td>
 						<div>
-							<input type="radio" id="${count}a" name="pergunta${count}" value="atende">
-							<label for="${count}a">Atende</label><br>
+							<input type="radio" id="${requisito} - Questão ${count} - Alternativa(a)" name="pergunta${count}" value="atende">
+							<label for="${requisito} - Questão ${count} - Alternativa(a)">Atende</label><br>
 
-							<input type="radio" id="${count}b" name="pergunta${count}" value="atende-parcialmente">
-							<label for="${count}b">Atende Parcialmente</label><br>
+							<input type="radio" id="${requisito} - Questão ${count} - Alternativa(b)" name="pergunta${count}" value="atende-parcialmente">
+							<label for="${requisito} - Questão ${count} - Alternativa(b)">Atende Parcialmente</label><br>
 
-							<input type="radio" id="${count}c" name="pergunta${count}" value="nao-atende">
-							<label for="${count}c">Não Atende</label><br>
+							<input type="radio" id="${requisito} - Questão ${count} - Alternativa(c)" name="pergunta${count}" value="nao-atende">
+							<label for="${requisito} - Questão ${count} - Alternativa(c)">Não Atende</label><br>
 
-							<input type="radio" id="${count}d" name="pergunta${count}" value="nao-se-aplica">
-							<label for="${count}d">Não se Aplica</label>
+							<input type="radio" id="${requisito} - Questão ${count} - Alternativa(d)" name="pergunta${count}" value="nao-se-aplica">
+							<label for="${requisito} - Questão ${count} - Alternativa(d)">Não se Aplica</label>
 						</div>
 
                 </tr>
@@ -84,11 +85,15 @@ async function mostrarValores() {
 
 		// Mostra os valores selecionados no console
 		
+		console.log("questoesJson.forEach", valoresSelecionados)
+
+
 		for (const key in valoresSelecionados) {
 			if (Object.hasOwnProperty.call(valoresSelecionados, key)) {
 				const values = {
-					usuario: localStorage.getItem('email'),
+					usuario: localStorage.getItem('usuario'),
 					pergunta_id: key,
+					pergunta_escrita: "questaooooooooooo1",
 					resposta: valoresSelecionados[key],
 				};
 

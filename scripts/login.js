@@ -31,6 +31,19 @@ document.addEventListener("DOMContentLoaded", function () {
 			responseDiv.textContent = `Login bem sucedido para o usuário ${data.user.email}`;
 
 			localStorage.setItem("email", data.user.email);
+
+
+/* 			const usuarioResultado = await fetch(`https://auditoria.onrender.com/user/${data.user.email}`)
+ */
+			const usuarioResultado = await fetch(`https://auditoria.onrender.com/user/${email}`);
+
+			const usernameNick = await usuarioResultado.json();
+
+			const usernameUsageNick = usernameNick.username;
+
+
+			localStorage.setItem("usuario", usernameUsageNick);
+
 			window.location.href = "../pages/pageUser.html";
 
 

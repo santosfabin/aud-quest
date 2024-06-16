@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 	const user = await fetch(`https://auditoria.onrender.com/user/${email}`)
 	const data = await user.json()
 
-	/* console.log(data) */
+	console.log(data)
 
 	document.getElementById("user").textContent = data.username
 	document.getElementById("email").textContent = data.email

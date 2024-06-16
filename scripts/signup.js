@@ -39,6 +39,7 @@ form.addEventListener("submit", async function (event) {
 		responseField.textContent = "Conta Criada com sucesso";
 
 		localStorage.setItem("email", values.email);
+		localStorage.setItem("usuario", values.username);
 		window.location.href = "../pages/pageUser.html";
 	} catch (error) {
 		console.error("Erro ao enviar requisição:", error);
