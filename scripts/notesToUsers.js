@@ -44,29 +44,29 @@ document.addEventListener("DOMContentLoaded", async function () {
 	});
 });
 
-document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener("DOMContentLoaded", function () {
 	document
 		.getElementById("enviarConteudos")
 		.addEventListener("click", async function () {
 			// Pegar o conteúdo da div com id "div1"
 			const div1Content = document.getElementById("div1").value;
-			const constatacoesValue = div1Content
+			const constatacoesValue = div1Content;
 			console.log(constatacoesValue);
 
 			// Pegar o conteúdo da div com id "div2"
 			const div2Content = document.getElementById("div2").value;
-			const avaliacaoValue = div2Content
+			const avaliacaoValue = div2Content;
 			console.log(avaliacaoValue);
 
 			// Pegar o conteúdo da div com id "div3"
 			const div3Content = document.getElementById("div3").value;
-			const planoValue = div3Content
+			const planoValue = div3Content;
 			console.log(planoValue);
 
 			/*  */
 
-			const userValue = localStorage.getItem("nick")
-			console.log(userValue)
+			const userValue = localStorage.getItem("nick");
+			console.log(userValue);
 
 			const values = {
 				usuario: userValue,
@@ -75,12 +75,21 @@ document.addEventListener("DOMContentLoaded", async function () {
 				plano_acao: planoValue
 			};
 
-			const response = await fetch("https://auditoria.onrender.com/constatacoes", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json"
-				},
-				body: JSON.stringify(values)
-			});
+			const response = await fetch(
+				"https://auditoria.onrender.com/constatacoes",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json"
+					},
+					body: JSON.stringify(values)
+				}
+			);
+			const tabela = document.getElementById("enviadoCheck");
+			tabela.textContent = "enviado123123"
+
+
+
+			/* window.location.href = "../pages/pageUser.html"; */
 		});
 });
