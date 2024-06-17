@@ -1,5 +1,5 @@
 #margin-top{
-	padding-top: 40px;
+	padding-top: 4px;
 }
 section .container, #pegarOsUsuarios a{
 
@@ -52,12 +52,12 @@ main {
 .profile-inter {
 	display: flex;
 	flex-direction: column;
+	gap: 20px;
 }
 
 .conteiner-profile {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
 }
 .conteiner-profile p {
 	margin-left: 1em;
