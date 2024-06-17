@@ -57,3 +57,8 @@ button{
 
 	background-color: var(--header);
 }
+textarea{
+	color: var(--color);
+	resize: none;
+	background-color: var(--header);
+}

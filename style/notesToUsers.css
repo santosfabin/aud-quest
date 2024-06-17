@@ -2,7 +2,7 @@
     margin-top: 50px;
 }
 
-#logs, #constatacoes, #avaliacao{
+#logs, #constatacoes, #avaliacao, #plano{
     margin: 50px;
     min-width: 400px;
     min-height: 550px;
@@ -11,7 +11,7 @@
     background-color: var(--header);
 
 }
-#logs div:first-of-type, #constatacoes div:first-of-type, #avaliacao div:first-of-type{
+#logs div:first-of-type, #constatacoes div:first-of-type, #avaliacao div:first-of-type, #plano div:first-of-type{
     margin-top: 30px;
 }
 #containerLogs{
@@ -30,7 +30,7 @@ textarea{
     width: 100%;
     background-color: var(--background);
 }
-#constatacoes, #avaliacao{
+#constatacoes, #avaliacao, #plano{
 
     display: flex;
     flex-direction: column;

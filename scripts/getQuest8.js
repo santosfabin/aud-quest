@@ -52,6 +52,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 							<label for="${requisito} - Arquivo ${count}">Arquivo</label>
 							<input type="file" accept=".pdf, .png, .jpg, .jpeg" id="${requisito} - Arquivo ${count}">
+
+							<textarea></textarea>
 						</div>
 
                 </tr>
