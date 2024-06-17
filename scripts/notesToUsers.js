@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				}
 			);
 			const tabela = document.getElementById("enviadoCheck");
-			tabela.textContent = "enviado123123"
+			tabela.textContent = "Constatação enviada"
 
 
 

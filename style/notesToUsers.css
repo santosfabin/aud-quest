@@ -2,10 +2,19 @@
     margin-top: 50px;
 }
 
-#logs, #constatacoes, #avaliacao, #plano{
+#logs{
     margin: 50px;
     min-width: 400px;
     min-height: 550px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: var(--header);
+
+}
+#constatacoes, #avaliacao, #plano{
+    margin: 50px;
+    width: 400px;
+    height: 550px;
     padding: 50px;
     border-radius: 25px;
     background-color: var(--header);
@@ -17,6 +26,8 @@
 #containerLogs{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 textarea{
     color: var(--color);
