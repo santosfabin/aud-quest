@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         `;
     
         document.getElementById("signup-login").innerHTML  = content;
+
+
     }
 
 });

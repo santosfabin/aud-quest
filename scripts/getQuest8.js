@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                     <td>${pergunta}</td>
                     <td>${documento_ou_registro}</td>
                     <td>${tipo_de_teste}</td>
-						<div>
+						<div class="div-pergunta">
 							<input type="radio" id="${requisito} - Questão ${count} - Alternativa(a)" name="pergunta${count}" value="atende">
 							<label for="${requisito} - Questão ${count} - Alternativa(a)">Atende</label><br>
 
@@ -49,6 +49,9 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 							<input type="radio" id="${requisito} - Questão ${count} - Alternativa(d)" name="pergunta${count}" value="nao-se-aplica">
 							<label for="${requisito} - Questão ${count} - Alternativa(d)">Não se Aplica</label>
+
+							<label for="${requisito} - Arquivo ${count}">Arquivo</label>
+							<input type="file" accept=".pdf, .png, .jpg, .jpeg" id="${requisito} - Arquivo ${count}">
 						</div>
 
                 </tr>
@@ -84,38 +87,48 @@ async function mostrarValores() {
 		});
 
 		// Mostra os valores selecionados no console
-		
-		console.log(valoresSelecionados)
 
+		console.log(valoresSelecionados);
 
 		for (const key in valoresSelecionados) {
 			if (Object.hasOwnProperty.call(valoresSelecionados, key)) {
 				const values = {
-					usuario: localStorage.getItem('usuario'),
+					usuario: localStorage.getItem("usuario"),
 					pergunta_id: key,
-					resposta: valoresSelecionados[key],
+					resposta: valoresSelecionados[key]
 				};
 
 				console.log(values);
 				try {
-					const response = await fetch("https://auditoria.onrender.com/resposta", {
-						method: "POST",
-						headers: {
-							"Content-Type": "application/json"
-						},
-						body: JSON.stringify(values)
-					});
-					
+					console.log("Enviando requisição para pergunta_id:", key);
+					const responseField = document.getElementById("enviando");
+					responseField.textContent = `Enviando requisição para pergunta_id: ${key}`;
+
+					const response = await fetch(
+						"https://auditoria.onrender.com/resposta",
+						{
+							method: "POST",
+							headers: {
+								"Content-Type": "application/json"
+							},
+							body: JSON.stringify(values)
+						}
+					);
+
 					if (!response.ok) {
-						throw new Error("Erro ao enviar requisição: " + response.statusText);
+						throw new Error(
+							"Erro ao enviar requisição: " + response.statusText
+						);
 					}
 				} catch (error) {
 					console.error("Erro ao enviar requisição:", error);
 					responseField.textContent = "Erro ao enviar requisição.";
 				}
-
 			}
 		}
+
+		const responseField = document.getElementById("enviando");
+		responseField.textContent = `requisições enviadas com sucesso`;
 
 		/* console.log(localStorage.getItem("email")); */
 

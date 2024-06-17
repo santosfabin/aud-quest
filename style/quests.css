@@ -38,3 +38,22 @@ h2 {
 	margin: 0;
 }
 /*  */
+
+.div-pergunta{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+}
+input, label{
+	cursor: pointer;
+}
+button{
+	cursor: pointer;
+	color: var(--color);
+
+	padding: 15px;
+	border-radius: 5px;
+
+	background-color: var(--header);
+}

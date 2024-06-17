@@ -1,0 +1,37 @@
+#usuarios{
+    margin-top: 50px;
+}
+
+#logs, #constatacoes, #avaliacao{
+    margin: 50px;
+    min-width: 400px;
+    min-height: 550px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: var(--header);
+
+}
+#logs div:first-of-type, #constatacoes div:first-of-type, #avaliacao div:first-of-type{
+    margin-top: 30px;
+}
+#containerLogs{
+    display: flex;
+    flex-wrap: wrap;
+}
+textarea{
+    color: var(--color);
+    margin-top: 20px;
+    padding: 20px;
+    resize: none;
+
+    border-radius: 20px;
+
+    height: 100%;
+    width: 100%;
+    background-color: var(--background);
+}
+#constatacoes, #avaliacao{
+
+    display: flex;
+    flex-direction: column;
+}

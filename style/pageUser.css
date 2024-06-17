@@ -1,4 +1,4 @@
-section .container {
+section .container, #pegarOsUsuarios a{
 	padding-top: 50px;
 
 	width: 100%;
