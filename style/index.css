@@ -8,3 +8,18 @@
 	align-items: center;
 	gap: 50px;
 }
+#our-services section {
+	background-color: var(--header);
+	padding: 50px;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+#unico{
+	font-size: 2em;
+}
+h2{
+	font-size: 1.5em;
+
+}

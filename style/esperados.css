@@ -1,0 +1,35 @@
+#paragrafo{
+    padding-top: 50px;
+}
+h1 {
+    background-color: var(--header);
+    color: var(--color);
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.chart-section {
+    margin: 3rem 0;
+    text-align: center;
+}
+.chart-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.chart-container {
+    position: relative;
+    height: 400px;
+    width: 80%;
+    margin: auto;
+    background-color: var(--header);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
