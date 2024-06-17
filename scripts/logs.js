@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 	data.forEach(item => {
 		const content = `
-            <div>
+            <div class="gettingAll">
             ${item.pergunta_id}
             <br>
             Resposta: 
