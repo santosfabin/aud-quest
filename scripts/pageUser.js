@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	usuario = localStorage.getItem("usuario");
 
 	var content = `
-        <a href="./getAllUsers.html"><h1>Fazer uma Constatação</h1></a>
-		<a href="./constatacoes.html"><h1>Verificar Constatações</h1></a>
+        <a class="container" href="./getAllUsers.html"><h1>Fazer uma Constatação</h1></a>
+		<a class="container" href="./constatacoes.html"><h1>Verificar Constatações</h1></a>
         `;
     
 

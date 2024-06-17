@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 	const getNick = localStorage.getItem("nick");
 	const countentUser = `
-            <div>
+            <div id="nick-profile">
             ${getNick}
             </div>
     

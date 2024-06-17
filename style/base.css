@@ -86,12 +86,18 @@ header nav span::after {
 	background: var(--text);
 }
 footer{
-	height: 50px;
-	padding: 0 50px;
+	height: auto;
+	padding: 30px 50px;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 2em;
 
 	background-color: var(--header);
+}
+
+footer img{
+	width: 150px;
+	height: 150px;
 }

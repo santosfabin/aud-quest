@@ -58,3 +58,8 @@ button{
     justify-content: center;
     margin-bottom: 50px;
 }
+
+#nick-profile{
+    margin-top: 20px;
+    font-size: 2em;
+}
